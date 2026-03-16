@@ -1069,6 +1069,355 @@ q75_explanation = "Insider threats come from people with legitimate access such 
 
 user_ans, correct, explain = ask_question(q75, q75_options, q75_answer, q75_explanation)
 check_answer(user_ans, correct, explain)
+# Question 76
+q76 = "Q76: Which of the following BEST describes a cold site in disaster recovery?"
+q76_options = [
+    "A) A fully operational backup site ready to take over immediately",
+    "B) A site with some equipment but no live data or active systems",
+    "C) An empty facility with no equipment that requires full setup after a disaster",
+    "D) A cloud-based backup solution"
+]
+q76_answer = "C"
+q76_explanation = "A cold site is an empty facility that requires full setup after a disaster. A warm site has some equipment. A hot site is fully operational and ready immediately."
+
+user_ans, correct, explain = ask_question(q76, q76_options, q76_answer, q76_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 77
+q77 = "Q77: Which of the following BEST describes a hot site in disaster recovery?"
+q77_options = [
+    "A) A site that requires 24-48 hours to become operational",
+    "B) A fully operational backup site that can take over immediately after a disaster",
+    "C) A site with basic infrastructure but no data",
+    "D) A mobile disaster recovery unit"
+]
+q77_answer = "B"
+q77_explanation = "A hot site mirrors the production environment and can take over immediately. It is the most expensive DR option but has the lowest recovery time."
+
+user_ans, correct, explain = ask_question(q77, q77_options, q77_answer, q77_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 78
+q78 = "Q78: What does the term 'attack surface' refer to?"
+q78_options = [
+    "A) The physical area around a server room that must be secured",
+    "B) The total number of vulnerabilities found in a system",
+    "C) All the points where an attacker could try to enter or extract data from a system",
+    "D) The number of users with admin privileges"
+]
+q78_answer = "C"
+q78_explanation = "The attack surface is every possible entry point an attacker could exploit. Reducing attack surface is a core security principle."
+
+user_ans, correct, explain = ask_question(q78, q78_options, q78_answer, q78_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 79
+q79 = "Q79: Which of the following BEST describes a dictionary attack?"
+q79_options = [
+    "A) Trying every possible character combination to crack a password",
+    "B) Using a list of common words and passwords to crack credentials",
+    "C) Using precomputed hashes to reverse engineer passwords",
+    "D) Intercepting credentials as they travel across a network"
+]
+q79_answer = "B"
+q79_explanation = "A dictionary attack uses a wordlist of common passwords. Brute force tries all combinations. Rainbow tables use precomputed hashes."
+
+user_ans, correct, explain = ask_question(q79, q79_options, q79_answer, q79_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 80
+q80 = "Q80: Which of the following is the BEST defense against phishing attacks?"
+q80_options = [
+    "A) Installing a firewall",
+    "B) Security awareness training for employees",
+    "C) Enabling full disk encryption",
+    "D) Disabling unused network ports"
+]
+q80_answer = "B"
+q80_explanation = "Since phishing targets humans, security awareness training is the most effective defense. Technical controls help but cannot replace educated users."
+
+user_ans, correct, explain = ask_question(q80, q80_options, q80_answer, q80_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 81
+q81 = "Q81: What is the purpose of a public key in asymmetric encryption?"
+q81_options = [
+    "A) To decrypt messages sent by others",
+    "B) To encrypt messages so only the holder of the private key can decrypt them",
+    "C) To sign documents on behalf of an organization",
+    "D) To generate a shared symmetric key"
+]
+q81_answer = "B"
+q81_explanation = "In asymmetric encryption the public key encrypts data and the private key decrypts it. The public key is freely shared while the private key is kept secret."
+
+user_ans, correct, explain = ask_question(q81, q81_options, q81_answer, q81_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 82
+q82 = "Q82: Which of the following BEST describes a CSRF attack?"
+q82_options = [
+    "A) Injecting malicious scripts into a trusted website",
+    "B) Tricking an authenticated user into unknowingly submitting a malicious request",
+    "C) Intercepting traffic between a browser and web server",
+    "D) Flooding a web server with requests to cause an outage"
+]
+q82_answer = "B"
+q82_explanation = "Cross-Site Request Forgery tricks an authenticated user's browser into sending unauthorized requests, exploiting the trust a site has in the user."
+
+user_ans, correct, explain = ask_question(q82, q82_options, q82_answer, q82_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 83
+q83 = "Q83: What is the MAIN purpose of security awareness training?"
+q83_options = [
+    "A) To teach employees how to perform penetration tests",
+    "B) To reduce human error and make employees the first line of defense",
+    "C) To replace technical security controls",
+    "D) To train employees on how to use encryption tools"
+]
+q83_answer = "B"
+q83_explanation = "Security awareness training reduces human error by educating employees on threats like phishing, social engineering, and safe computing practices."
+
+user_ans, correct, explain = ask_question(q83, q83_options, q83_answer, q83_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 84
+q84 = "Q84: Which of the following BEST describes the concept of zero trust?"
+q84_options = [
+    "A) Trusting all users inside the corporate network by default",
+    "B) Never trusting any user or device by default and always verifying before granting access",
+    "C) Blocking all external traffic at the firewall",
+    "D) Requiring all employees to use VPNs"
+]
+q84_answer = "B"
+q84_explanation = "Zero trust assumes no user or device should be trusted by default, even inside the network. Every access request must be verified continuously."
+
+user_ans, correct, explain = ask_question(q84, q84_options, q84_answer, q84_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 85
+q85 = "Q85: Which hashing algorithm is considered the MOST secure from the options below?"
+q85_options = [
+    "A) MD5",
+    "B) SHA-1",
+    "C) SHA-256",
+    "D) DES"
+]
+q85_answer = "C"
+q85_explanation = "SHA-256 is currently considered secure. MD5 and SHA-1 are outdated and vulnerable to collision attacks. DES is a symmetric encryption algorithm, not a hash."
+
+user_ans, correct, explain = ask_question(q85, q85_options, q85_answer, q85_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 86
+q86 = "Q86: What is the purpose of log management in cybersecurity?"
+q86_options = [
+    "A) To encrypt all system activity",
+    "B) To collect, store, and analyze logs to detect and investigate security events",
+    "C) To back up user data on a scheduled basis",
+    "D) To assign permissions based on user activity"
+]
+q86_answer = "B"
+q86_explanation = "Log management collects and analyzes logs from systems and devices to detect threats, support investigations, and meet compliance requirements."
+
+user_ans, correct, explain = ask_question(q86, q86_options, q86_answer, q86_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 87
+q87 = "Q87: Which of the following BEST describes a spear phishing attack?"
+q87_options = [
+    "A) A phishing attack sent to thousands of random users",
+    "B) A highly targeted phishing attack aimed at a specific individual or organization",
+    "C) A phishing attack delivered via SMS",
+    "D) A phishing attack that uses voice calls"
+]
+q87_answer = "B"
+q87_explanation = "Spear phishing is targeted at a specific person or organization using personalized information to appear more convincing than generic phishing."
+
+user_ans, correct, explain = ask_question(q87, q87_options, q87_answer, q87_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 88
+q88 = "Q88: Which of the following BEST describes the principle of need to know?"
+q88_options = [
+    "A) Users should know all company security policies",
+    "B) Users should only have access to information required to perform their specific job",
+    "C) All employees should know who the security team is",
+    "D) Managers should know all employee passwords"
+]
+q88_answer = "B"
+q88_explanation = "Need to know restricts access to information based on job necessity. It works alongside least privilege to minimize data exposure."
+
+user_ans, correct, explain = ask_question(q88, q88_options, q88_answer, q88_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 89
+q89 = "Q89: What does TPM stand for and what is its purpose?"
+q89_options = [
+    "A) Trusted Platform Module — a chip that stores encryption keys and protects hardware integrity",
+    "B) Threat Protection Manager — software that blocks malware",
+    "C) Total Patch Management — a system for deploying security updates",
+    "D) Trusted Password Manager — a tool for storing user credentials"
+]
+q89_answer = "A"
+q89_explanation = "A TPM is a hardware chip that stores cryptographic keys and ensures platform integrity. It is commonly used with full disk encryption like BitLocker."
+
+user_ans, correct, explain = ask_question(q89, q89_options, q89_answer, q89_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 90
+q90 = "Q90: Which of the following BEST describes an advanced persistent threat (APT)?"
+q90_options = [
+    "A) A fast moving virus that spreads across a network in minutes",
+    "B) A long term targeted attack where an intruder gains and maintains stealthy access",
+    "C) A ransomware attack that encrypts files immediately",
+    "D) A phishing campaign targeting thousands of users at once"
+]
+q90_answer = "B"
+q90_explanation = "An APT is a prolonged stealthy attack, often state-sponsored, where the attacker maintains persistent access to gather intelligence over a long period."
+
+user_ans, correct, explain = ask_question(q90, q90_options, q90_answer, q90_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 91
+q91 = "Q91: Which of the following BEST describes tokenization?"
+q91_options = [
+    "A) Converting plaintext into ciphertext using an encryption key",
+    "B) Replacing sensitive data with a non-sensitive placeholder value",
+    "C) Hashing a password before storing it in a database",
+    "D) Splitting data across multiple storage locations"
+]
+q91_answer = "B"
+q91_explanation = "Tokenization replaces sensitive data like credit card numbers with a token. Unlike encryption, the original data is not mathematically derivable from the token."
+
+user_ans, correct, explain = ask_question(q91, q91_options, q91_answer, q91_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 92
+q92 = "Q92: Which of the following BEST describes a sandbox environment?"
+q92_options = [
+    "A) A secured network segment for storing sensitive data",
+    "B) An isolated environment used to safely execute and analyze suspicious code",
+    "C) A backup server used during disaster recovery",
+    "D) A firewall rule that isolates infected devices"
+]
+q92_answer = "B"
+q92_explanation = "A sandbox is an isolated environment where suspicious code can be executed and analyzed safely without risking production systems."
+
+user_ans, correct, explain = ask_question(q92, q92_options, q92_answer, q92_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 93
+q93 = "Q93: What is the purpose of a vulnerability assessment?"
+q93_options = [
+    "A) To actively exploit weaknesses to determine their real impact",
+    "B) To identify and prioritize vulnerabilities in systems without exploiting them",
+    "C) To train employees on how to respond to security incidents",
+    "D) To monitor network traffic for unusual patterns"
+]
+q93_answer = "B"
+q93_explanation = "A vulnerability assessment identifies and prioritizes weaknesses without exploiting them. A penetration test goes further and actively exploits vulnerabilities."
+
+user_ans, correct, explain = ask_question(q93, q93_options, q93_answer, q93_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 94
+q94 = "Q94: Which of the following BEST describes mandatory access control (MAC)?"
+q94_options = [
+    "A) Users can set their own permissions on files they own",
+    "B) Access is assigned based on job role",
+    "C) Access is determined by the system based on security labels and clearance levels",
+    "D) Access is granted based on the time of day"
+]
+q94_answer = "C"
+q94_explanation = "MAC uses security labels and clearance levels enforced by the system, not users. It is commonly used in government and military environments."
+
+user_ans, correct, explain = ask_question(q94, q94_options, q94_answer, q94_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 95
+q95 = "Q95: Which of the following is the BEST example of a preventive security control?"
+q95_options = [
+    "A) Security camera",
+    "B) Audit log",
+    "C) Firewall",
+    "D) Incident response plan"
+]
+q95_answer = "C"
+q95_explanation = "A firewall is a preventive control that stops threats before they occur. Cameras and logs are detective controls. An IR plan is a corrective control."
+
+user_ans, correct, explain = ask_question(q95, q95_options, q95_answer, q95_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 96
+q96 = "Q96: What is the purpose of a chain of custody in digital forensics?"
+q96_options = [
+    "A) To encrypt evidence before it is submitted to court",
+    "B) To document the handling of evidence to ensure its integrity and admissibility",
+    "C) To assign investigators to a security incident",
+    "D) To back up forensic images to a secure server"
+]
+q96_answer = "B"
+q96_explanation = "Chain of custody documents who handled evidence, when, and how, ensuring its integrity is maintained and it remains admissible in legal proceedings."
+
+user_ans, correct, explain = ask_question(q96, q96_options, q96_answer, q96_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 97
+q97 = "Q97: Which of the following BEST describes input validation?"
+q97_options = [
+    "A) Encrypting all data entered into a web form",
+    "B) Verifying that user input meets expected criteria before processing it",
+    "C) Logging all user input for security auditing",
+    "D) Blocking all special characters at the firewall level"
+]
+q97_answer = "B"
+q97_explanation = "Input validation checks that data entered by a user meets expected criteria, preventing attacks like SQL injection and XSS from reaching backend systems."
+
+user_ans, correct, explain = ask_question(q97, q97_options, q97_answer, q97_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 98
+q98 = "Q98: Which of the following BEST describes a buffer overflow attack?"
+q98_options = [
+    "A) Flooding a network with traffic to cause an outage",
+    "B) Sending more data to a memory buffer than it can handle to overwrite adjacent memory",
+    "C) Injecting malicious SQL into a database query",
+    "D) Intercepting data between a client and server"
+]
+q98_answer = "B"
+q98_explanation = "A buffer overflow sends more data than a buffer can hold, potentially overwriting memory and allowing an attacker to execute arbitrary code."
+
+user_ans, correct, explain = ask_question(q98, q98_options, q98_answer, q98_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 99
+q99 = "Q99: Which of the following BEST describes the purpose of an acceptable use policy (AUP)?"
+q99_options = [
+    "A) To define how encryption is applied across the organization",
+    "B) To document rules for appropriate use of company systems and resources",
+    "C) To outline steps for responding to a security incident",
+    "D) To assign user roles and permissions across the network"
+]
+q99_answer = "B"
+q99_explanation = "An AUP defines what is and is not acceptable when using company systems, protecting the organization legally and setting clear behavioral expectations."
+
+user_ans, correct, explain = ask_question(q99, q99_options, q99_answer, q99_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 100
+q100 = "Q100: Which of the following BEST describes the difference between a threat and a vulnerability?"
+q100_options = [
+    "A) A threat is a weakness in a system, a vulnerability is something that exploits it",
+    "B) A threat is a potential danger, a vulnerability is a weakness that could be exploited",
+    "C) They mean the same thing in cybersecurity",
+    "D) A vulnerability is an active attack, a threat is a potential one"
+]
+q100_answer = "B"
+q100_explanation = "A vulnerability is a weakness in a system. A threat is anything that could exploit that weakness. Risk is what happens when a threat exploits a vulnerability."
+
+user_ans, correct, explain = ask_question(q100, q100_options, q100_answer, q100_explanation)
+check_answer(user_ans, correct, explain)
 
 print("\n================================")
 print("n\        QUIZ COMPLETE!      ")
