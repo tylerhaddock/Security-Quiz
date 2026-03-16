@@ -511,6 +511,285 @@ q35_explanation = "A CA is a trusted entity that issues digital certificates use
 
 user_ans, correct, explain = ask_question(q35, q35_options, q35_answer, q35_explanation)
 check_answer(user_ans, correct, explain)
+# Question 36
+q36 = "Q36: Which of the following is used to detect and prevent intrusions in real time?"
+q36_options = [
+    "A) IDS",
+    "B) IPS",
+    "C) SIEM",
+    "D) Firewall"
+]
+q36_answer = "B"
+q36_explanation = "An IPS (Intrusion Prevention System) actively blocks threats in real time. An IDS only detects and alerts but does not block."
+
+user_ans, correct, explain = ask_question(q36, q36_options, q36_answer, q36_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 37
+q37 = "Q37: What type of attack tries every possible password combination until the correct one is found?"
+q37_options = [
+    "A) Dictionary attack",
+    "B) Rainbow table attack",
+    "C) Brute force attack",
+    "D) Credential stuffing"
+]
+q37_answer = "C"
+q37_explanation = "Brute force tries every possible combination. Dictionary attacks use a wordlist. Rainbow tables use precomputed hashes."
+
+user_ans, correct, explain = ask_question(q37, q37_options, q37_answer, q37_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 38
+q38 = "Q38: Which of the following BEST describes a business continuity plan (BCP)?"
+q38_options = [
+    "A) A plan to recover deleted files after an attack",
+    "B) A plan to keep critical business operations running during and after a disaster",
+    "C) A plan to patch vulnerabilities across all systems",
+    "D) A plan to train employees on security awareness"
+]
+q38_answer = "B"
+q38_explanation = "A BCP ensures critical operations continue during disruptions. A DRP focuses on restoring systems after a disaster occurs."
+
+user_ans, correct, explain = ask_question(q38, q38_options, q38_answer, q38_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 39
+q39 = "Q39: What does SIEM stand for and what is its primary function?"
+q39_options = [
+    "A) Secure Information and Event Management — encrypts log files",
+    "B) Security Information and Event Management — aggregates and analyzes security logs",
+    "C) System Integrity and Event Monitoring — monitors hardware health",
+    "D) Security Incident and Error Management — tracks software bugs"
+]
+q39_answer = "B"
+q39_explanation = "SIEM collects and correlates security logs from across an environment to detect threats and support incident response."
+
+user_ans, correct, explain = ask_question(q39, q39_options, q39_answer, q39_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 40
+q40 = "Q40: Which of the following BEST describes tailgating?"
+q40_options = [
+    "A) An attacker following an authorized person into a secured area without their knowledge",
+    "B) An attacker intercepting network traffic behind a firewall",
+    "C) An attacker sending phishing emails to executives",
+    "D) An attacker reusing captured authentication tokens"
+]
+q40_answer = "A"
+q40_explanation = "Tailgating is a physical security attack where an attacker follows an authorized person through a secured door without credentials."
+
+user_ans, correct, explain = ask_question(q40, q40_options, q40_answer, q40_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 41
+q41 = "Q41: Which encryption algorithm is considered the current standard for symmetric encryption?"
+q41_options = [
+    "A) DES",
+    "B) RSA",
+    "C) AES",
+    "D) MD5"
+]
+q41_answer = "C"
+q41_explanation = "AES (Advanced Encryption Standard) is the current symmetric encryption standard. DES is outdated. RSA is asymmetric. MD5 is a hash function."
+
+user_ans, correct, explain = ask_question(q41, q41_options, q41_answer, q41_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 42
+q42 = "Q42: What is the purpose of salting a password before hashing it?"
+q42_options = [
+    "A) To encrypt the password twice for extra security",
+    "B) To add a random value to the password to prevent rainbow table attacks",
+    "C) To convert the password into asymmetric format",
+    "D) To store the password in plaintext temporarily"
+]
+q42_answer = "B"
+q42_explanation = "A salt is a random value added to a password before hashing, ensuring identical passwords produce different hashes and defeating rainbow tables."
+
+user_ans, correct, explain = ask_question(q42, q42_options, q42_answer, q42_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 43
+q43 = "Q43: Which of the following BEST describes a supply chain attack?"
+q43_options = [
+    "A) An attack targeting a company's shipping and logistics systems",
+    "B) An attack that compromises a trusted vendor or software update to reach the target",
+    "C) An attack that floods a network with traffic",
+    "D) An attack using stolen credentials to access cloud storage"
+]
+q43_answer = "B"
+q43_explanation = "A supply chain attack compromises a trusted third party like a software vendor to gain access to the ultimate target organization."
+
+user_ans, correct, explain = ask_question(q43, q43_options, q43_answer, q43_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 44
+q44 = "Q44: What port does DNS use by default?"
+q44_options = [
+    "A) 25",
+    "B) 53",
+    "C) 110",
+    "D) 443"
+]
+q44_answer = "B"
+q44_explanation = "DNS uses port 53. Port 25 is SMTP, port 110 is POP3, port 443 is HTTPS. Common ports are heavily tested on Security+."
+
+user_ans, correct, explain = ask_question(q44, q44_options, q44_answer, q44_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 45
+q45 = "Q45: Which of the following BEST describes a honeypo?"
+q45_options = [
+    "A) A firewall rule that traps malicious traffic",
+    "B) A decoy system designed to attract and monitor attackers",
+    "C) A backup server used during disaster recovery",
+    "D) A tool used to crack password hashes"
+]
+q45_answer = "B"
+q45_explanation = "A honeypot is a decoy system that lures attackers, allowing defenders to monitor their tactics without risking real systems."
+
+user_ans, correct, explain = ask_question(q45, q45_options, q45_answer, q45_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 46
+q46 = "Q46: What is the MAIN difference between a vulnerability scan and a penetration test?"
+q46_options = [
+    "A) A vulnerability scan is illegal, a penetration test is not",
+    "B) A vulnerability scan identifies weaknesses, a penetration test actively exploits them",
+    "C) A penetration test is automated, a vulnerability scan is manual",
+    "D) They are the same thing"
+]
+q46_answer = "B"
+q46_explanation = "Vulnerability scans identify and report weaknesses. Penetration tests go further by actively exploiting those weaknesses to assess real impact."
+
+user_ans, correct, explain = ask_question(q46, q46_options, q46_answer, q46_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 47
+q47 = "Q47: Which of the following BEST describes role-based access control (RBAC)?"
+q47_options = [
+    "A) Access is granted based on a user's physical location",
+    "B) Access is granted based on the user's assigned role within the organization",
+    "C) Access is granted based on time of day",
+    "D) Access is granted based on the device being used"
+]
+q47_answer = "B"
+q47_explanation = "RBAC assigns permissions based on job roles rather than individual users, making access management easier and more consistent."
+
+user_ans, correct, explain = ask_question(q47, q47_options, q47_answer, q47_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 48
+q48 = "Q48: Which of the following is a common use of steganography?"
+q48_options = [
+    "A) Encrypting hard drive contents",
+    "B) Hiding secret data inside an image or audio file",
+    "C) Scanning networks for open ports",
+    "D) Cracking password hashes"
+]
+q48_answer = "B"
+q48_explanation = "Steganography hides data inside innocent-looking files like images or audio. It is used for covert communication and data exfiltration."
+
+user_ans, correct, explain = ask_question(q48, q48_options, q48_answer, q48_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 49
+q49 = "Q49: What does the term non-repudiation mean in cybersecurity?"
+q49_options = [
+    "A) Ensuring data is encrypted at rest",
+    "B) Ensuring a user cannot deny performing an action they took",
+    "C) Ensuring systems remain available during an attack",
+    "D) Ensuring passwords are never stored in plaintext"
+]
+q49_answer = "B"
+q49_explanation = "Non-repudiation ensures that a user cannot deny an action they performed, typically enforced through digital signatures and audit logs."
+
+user_ans, correct, explain = ask_question(q49, q49_options, q49_answer, q49_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 50
+q50 = "Q50: Which of the following BEST describes a watering hole attack?"
+q50_options = [
+    "A) Flooding a network with traffic to cause an outage",
+    "B) Compromising a website frequently visited by the target group",
+    "C) Sending phishing emails to a large group of users",
+    "D) Physically stealing hardware from a target organization"
+]
+q50_answer = "B"
+q50_explanation = "A watering hole attack compromises a website the target group regularly visits, infecting visitors with malware when they land on the page."
+
+user_ans, correct, explain = ask_question(q50, q50_options, q50_answer, q50_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 51
+q51 = "Q51: Which protocol is used to securely transfer files and runs over SSH?"
+q51_options = [
+    "A) FTP",
+    "B) FTPS",
+    "C) SFTP",
+    "D) TFTP"
+]
+q51_answer = "C"
+q51_explanation = "SFTP (SSH File Transfer Protocol) runs over SSH and is fully encrypted. FTP is plaintext. FTPS adds TLS to FTP. TFTP is lightweight with no authentication."
+
+user_ans, correct, explain = ask_question(q51, q51_options, q51_answer, q51_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 52
+q52 = "Q52: An attacker sends an email pretending to be the CEO asking an employee to wire money. What attack is this?"
+q52_options = [
+    "A) Phishing",
+    "B) Whaling",
+    "C) Smishing",
+    "D) Vishing"
+]
+q52_answer = "B"
+q52_explanation = "Whaling is a targeted phishing attack aimed specifically at high-profile individuals like executives. BEC (Business Email Compromise) is a common whaling tactic."
+
+user_ans, correct, explain = ask_question(q52, q52_options, q52_answer, q52_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 53
+q53 = "Q53: Which of the following BEST describes data loss prevention (DLP)?"
+q53_options = [
+    "A) A tool that encrypts all data stored on a hard drive",
+    "B) A system that detects and prevents unauthorized transfer of sensitive data",
+    "C) A backup solution that restores lost files after an attack",
+    "D) A firewall rule that blocks all outbound traffic"
+]
+q53_answer = "B"
+q53_explanation = "DLP monitors and controls data transfers to prevent sensitive information from leaving the organization without authorization."
+
+user_ans, correct, explain = ask_question(q53, q53_options, q53_answer, q53_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 54
+q54 = "Q54: What is the purpose of an access control list (ACL)?"
+q54_options = [
+    "A) To log all failed login attempts",
+    "B) To define which users or systems are permitted or denied access to a resource",
+    "C) To encrypt data traveling across a network",
+    "D) To assign IP addresses to network devices"
+]
+q54_answer = "B"
+q54_explanation = "An ACL is a set of rules that defines which users or systems are allowed or denied access to specific network resources or files."
+
+user_ans, correct, explain = ask_question(q54, q54_options, q54_answer, q54_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 55
+q55 = "Q55: Which of the following BEST describes a botnet?"
+q55_options = [
+    "A) A network of security cameras monitored by an attacker",
+    "B) A collection of compromised devices controlled remotely by an attacker",
+    "C) A group of firewalls working together to block attacks",
+    "D) A set of honeypots deployed to attract attackers"
+]
+q55_answer = "B"
+q55_explanation = "A botnet is a network of infected devices (bots) controlled by an attacker (botmaster), often used to launch DDoS attacks or send spam."
+
+user_ans, correct, explain = ask_question(q55, q55_options, q55_answer, q55_explanation)
+check_answer(user_ans, correct, explain)
 
 print("\n================================")
 print("n\        QUIZ COMPLETE!      ")
