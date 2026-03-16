@@ -1,3 +1,5 @@
+import random
+
 # Tyler's Security+ Quiz App
 # Built by Tyler Haddock - for GitHub portfolio
 
@@ -1420,7 +1422,7 @@ user_ans, correct, explain = ask_question(q100, q100_options, q100_answer, q100_
 check_answer(user_ans, correct, explain)
 
 print("\n================================")
-print("n\        QUIZ COMPLETE!      ")
+print("\n        QUIZ COMPLETE!      ")
 print("==============================")
 print(f"Your Score: {score} out of {total_questions}")
 
