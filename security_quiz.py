@@ -790,6 +790,285 @@ q55_explanation = "A botnet is a network of infected devices (bots) controlled b
 
 user_ans, correct, explain = ask_question(q55, q55_options, q55_answer, q55_explanation)
 check_answer(user_ans, correct, explain)
+# Question 56
+q56 = "Q56: Which of the following BEST describes threat intelligence?"
+q56_options = [
+    "A) A tool that automatically patches vulnerabilities",
+    "B) Information about current and emerging threats used to make security decisions",
+    "C) A log of all failed login attempts on a system",
+    "D) A list of approved software applications"
+]
+q56_answer = "B"
+q56_explanation = "Threat intelligence is actionable information about threats and threat actors that helps organizations proactively defend their systems."
+
+user_ans, correct, explain = ask_question(q56, q56_options, q56_answer, q56_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 57
+q57 = "Q57: What is the purpose of patch management?"
+q57_options = [
+    "A) To monitor network traffic for suspicious activity",
+    "B) To ensure systems are kept up to date with security fixes",
+    "C) To back up critical data on a scheduled basis",
+    "D) To assign user roles and permissions"
+]
+q57_answer = "B"
+q57_explanation = "Patch management ensures systems receive security updates promptly, closing vulnerabilities before attackers can exploit them."
+
+user_ans, correct, explain = ask_question(q57, q57_options, q57_answer, q57_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 58
+q58 = "Q58: Which of the following BEST describes a logic bomb?"
+q58_options = [
+    "A) Malware that spreads automatically across a network",
+    "B) Malicious code that executes when a specific condition or trigger is met",
+    "C) A phishing email targeting executives",
+    "D) A tool used to crack encryption keys"
+]
+q58_answer = "B"
+q58_explanation = "A logic bomb is malicious code that remains dormant until a specific trigger occurs, such as a date, time, or user action."
+
+user_ans, correct, explain = ask_question(q58, q58_options, q58_answer, q58_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 59
+q59 = "Q59: Which of the following port and protocol pairs is CORRECT?"
+q59_options = [
+    "A) SSH — Port 23",
+    "B) SMTP — Port 25",
+    "C) HTTP — Port 443",
+    "D) RDP — Port 22"
+]
+q59_answer = "B"
+q59_explanation = "SMTP uses port 25. SSH is port 22, HTTP is port 80, HTTPS is port 443, and RDP is port 3389. Know these cold for the exam."
+
+user_ans, correct, explain = ask_question(q59, q59_options, q59_answer, q59_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 60
+q60 = "Q60: What is the purpose of full disk encryption (FDE)?"
+q60_options = [
+    "A) To speed up disk read and write performance",
+    "B) To protect data on a device if it is lost or stolen",
+    "C) To compress files to save storage space",
+    "D) To back up data to a remote server"
+]
+q60_answer = "B"
+q60_explanation = "Full disk encryption protects all data on a device by encrypting the entire drive, making data unreadable without the correct credentials."
+
+user_ans, correct, explain = ask_question(q60, q60_options, q60_answer, q60_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 61
+q61 = "Q61: Which of the following BEST describes a man-in-the-browser attack?"
+q61_options = [
+    "A) An attacker physically sits between two computers",
+    "B) Malware that intercepts and modifies transactions inside a web browser",
+    "C) An attacker clones a website to steal credentials",
+    "D) An attacker floods a browser with pop-up ads"
+]
+q61_answer = "B"
+q61_explanation = "A man-in-the-browser attack uses malware to intercept and manipulate web transactions in real time inside the victim's browser."
+
+user_ans, correct, explain = ask_question(q61, q61_options, q61_answer, q61_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 62
+q62 = "Q62: Which of the following is the BEST way to protect data at rest?"
+q62_options = [
+    "A) VPN",
+    "B) TLS",
+    "C) Encryption",
+    "D) Firewall"
+]
+q62_answer = "C"
+q62_explanation = "Encryption protects data at rest by making it unreadable without the correct key. VPN and TLS protect data in transit, not at rest."
+
+user_ans, correct, explain = ask_question(q62, q62_options, q62_answer, q62_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 63
+q63 = "Q63: What is the purpose of a disaster recovery plan (DRP)?"
+q63_options = [
+    "A) To train employees on phishing awareness",
+    "B) To restore IT systems and operations after a disaster or outage",
+    "C) To prevent attackers from accessing the network",
+    "D) To assign roles and responsibilities during a security audit"
+]
+q63_answer = "B"
+q63_explanation = "A DRP focuses on restoring IT systems after a disaster. A BCP is broader and covers keeping all business operations running."
+
+user_ans, correct, explain = ask_question(q63, q63_options, q63_answer, q63_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 64
+q64 = "Q64: Which of the following BEST describes a cross-site scripting (XSS) attack?"
+q64_options = [
+    "A) Injecting malicious SQL into a database query",
+    "B) Injecting malicious scripts into a trusted website viewed by other users",
+    "C) Intercepting traffic between a browser and a web server",
+    "D) Flooding a web server with requests to cause an outage"
+]
+q64_answer = "B"
+q64_explanation = "XSS injects malicious scripts into a trusted website, which then execute in the browsers of other users who visit the page."
+
+user_ans, correct, explain = ask_question(q64, q64_options, q64_answer, q64_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 65
+q65 = "Q65: Which of the following BEST describes SQL injection?"
+q65_options = [
+    "A) Injecting malware into a database server through a USB drive",
+    "B) Inserting malicious SQL code into an input field to manipulate a database",
+    "C) Encrypting a database and demanding ransom",
+    "D) Intercepting database traffic across a network"
+]
+q65_answer = "B"
+q65_explanation = "SQL injection inserts malicious SQL code into an input field to manipulate or extract data from a backend database."
+
+user_ans, correct, explain = ask_question(q65, q65_options, q65_answer, q65_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 66
+q66 = "Q66: What does the term 'threat actor' refer to?"
+q66_options = [
+    "A) A security professional performing a penetration test",
+    "B) Any individual or group that poses a threat to an organization's security",
+    "C) Software used to detect and block malware",
+    "D) A vulnerability found during a security audit"
+]
+q66_answer = "B"
+q66_explanation = "A threat actor is any individual or group that intentionally causes harm to systems. Examples include nation-states, hacktivists, and insider threats."
+
+user_ans, correct, explain = ask_question(q66, q66_options, q66_answer, q66_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 67
+q67 = "Q67: Which of the following BEST describes separation of duties?"
+q67_options = [
+    "A) Requiring employees to take mandatory vacation",
+    "B) Dividing critical tasks among multiple people to prevent fraud or error",
+    "C) Assigning all admin tasks to a single trusted employee",
+    "D) Separating wired and wireless network traffic"
+]
+q67_answer = "B"
+q67_explanation = "Separation of duties splits critical tasks across multiple people so no single person has enough access to commit fraud or make a critical error alone."
+
+user_ans, correct, explain = ask_question(q67, q67_options, q67_answer, q67_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 68
+q68 = "Q68: Which of the following BEST describes a rainbow table attack?"
+q68_options = [
+    "A) Trying every possible password combination one by one",
+    "B) Using precomputed hash values to crack passwords",
+    "C) Intercepting hashed passwords over a network",
+    "D) Injecting malicious code into a login form"
+]
+q68_answer = "B"
+q68_explanation = "Rainbow table attacks use precomputed hash values to reverse engineer passwords. Salting passwords defeats this attack."
+
+user_ans, correct, explain = ask_question(q68, q68_options, q68_answer, q68_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 69
+q69 = "Q69: Which of the following is an example of a technical security control?"
+q69_options = [
+    "A) Security awareness training",
+    "B) A locked server room door",
+    "C) An intrusion prevention system",
+    "D) A written acceptable use policy"
+]
+q69_answer = "C"
+q69_explanation = "Technical controls use technology to protect systems, like firewalls and IPS. Physical controls are locks and cameras. Administrative controls are policies."
+
+user_ans, correct, explain = ask_question(q69, q69_options, q69_answer, q69_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 70
+q70 = "Q70: What is the purpose of a security baseline?"
+q70_options = [
+    "A) To document all known vulnerabilities in a system",
+    "B) To establish a minimum security standard that all systems must meet",
+    "C) To monitor network traffic for anomalies",
+    "D) To assign user permissions based on job role"
+]
+q70_answer = "B"
+q70_explanation = "A security baseline defines the minimum security configuration required for systems in an organization, ensuring consistent protection."
+
+user_ans, correct, explain = ask_question(q70, q70_options, q70_answer, q70_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 71
+q71 = "Q71: Which of the following BEST describes pretexting?"
+q71_options = [
+    "A) Sending malicious attachments via email",
+    "B) Creating a fabricated scenario to manipulate someone into revealing information",
+    "C) Intercepting network traffic to steal credentials",
+    "D) Flooding a system with login attempts"
+]
+q71_answer = "B"
+q71_explanation = "Pretexting is a social engineering technique where an attacker invents a believable scenario to trick a victim into revealing sensitive information."
+
+user_ans, correct, explain = ask_question(q71, q71_options, q71_answer, q71_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 72
+q72 = "Q72: Which of the following BEST describes a fileless malware attack?"
+q72_options = [
+    "A) Malware stored on a USB drive",
+    "B) Malware that runs entirely in memory without writing files to disk",
+    "C) Malware that deletes all files on a hard drive",
+    "D) Malware hidden inside an image file"
+]
+q72_answer = "B"
+q72_explanation = "Fileless malware runs in memory and leaves no files on disk, making it much harder for traditional antivirus tools to detect."
+
+user_ans, correct, explain = ask_question(q72, q72_options, q72_answer, q72_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 73
+q73 = "Q73: What does RDP stand for and what port does it use?"
+q73_options = [
+    "A) Remote Desktop Protocol — Port 22",
+    "B) Remote Desktop Protocol — Port 3389",
+    "C) Remote Data Protocol — Port 443",
+    "D) Remote Desktop Protocol — Port 80"
+]
+q73_answer = "B"
+q73_explanation = "RDP (Remote Desktop Protocol) uses port 3389 and allows users to remotely control another computer's desktop. It is a frequent attack target."
+
+user_ans, correct, explain = ask_question(q73, q73_options, q73_answer, q73_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 74
+q74 = "Q74: Which of the following BEST describes the concept of data sovereignty?"
+q74_options = [
+    "A) Encrypting all data before it leaves the network",
+    "B) The idea that data is subject to the laws of the country where it is stored",
+    "C) Ensuring only authorized users can access sensitive data",
+    "D) Backing up data to multiple geographic locations"
+]
+q74_answer = "B"
+q74_explanation = "Data sovereignty means data is governed by the laws of the country where it physically resides, which is critical for cloud storage compliance."
+
+user_ans, correct, explain = ask_question(q74, q74_options, q74_answer, q74_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 75
+q75 = "Q75: Which of the following BEST describes an insider threat?"
+q75_options = [
+    "A) A hacker from another country attacking a network remotely",
+    "B) A current or former employee who misuses their access to harm the organization",
+    "C) Malware installed on a system through a phishing email",
+    "D) An attacker who physically breaks into a server room"
+]
+q75_answer = "B"
+q75_explanation = "Insider threats come from people with legitimate access such as employees or contractors, making them especially dangerous and difficult to detect."
+
+user_ans, correct, explain = ask_question(q75, q75_options, q75_answer, q75_explanation)
+check_answer(user_ans, correct, explain)
 
 print("\n================================")
 print("n\        QUIZ COMPLETE!      ")
