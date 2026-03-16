@@ -1437,3 +1437,133 @@ else:
 
 print(f"\nPercentage: {percentage: .1f}%")
 print("====================================================")
+
+def run_quiz():
+    all_questions = [
+        (q1, q1_options, q1_answer, q1_explanation),
+        (q2, q2_options, q2_answer, q2_explanation),
+        (q3, q3_options, q3_answer, q3_explanation),
+        (q4, q4_options, q4_answer, q4_explanation),
+        (q5, q5_options, q5_answer, q5_explanation),
+        (q6, q6_options, q6_answer, q6_explanation),
+        (q7, q7_options, q7_answer, q7_explanation),
+        (q8, q8_options, q8_answer, q8_explanation),
+        (q9, q9_options, q9_answer, q9_explanation),
+        (q10, q10_options, q10_answer, q10_explanation),
+        (q11, q11_options, q11_answer, q11_explanation),
+        (q12, q12_options, q12_answer, q12_explanation),
+        (q13, q13_options, q13_answer, q13_explanation),
+        (q14, q14_options, q14_answer, q14_explanation),
+        (q15, q15_options, q15_answer, q15_explanation),
+        (q16, q16_options, q16_answer, q16_explanation),
+        (q17, q17_options, q17_answer, q17_explanation),
+        (q18, q18_options, q18_answer, q18_explanation),
+        (q19, q19_options, q19_answer, q19_explanation),
+        (q20, q20_options, q20_answer, q20_explanation),
+        (q21, q21_options, q21_answer, q21_explanation),
+        (q22, q22_options, q22_answer, q22_explanation),
+        (q23, q23_options, q23_answer, q23_explanation),
+        (q24, q24_options, q24_answer, q24_explanation),
+        (q25, q25_options, q25_answer, q25_explanation),
+        (q26, q26_options, q26_answer, q26_explanation),
+        (q27, q27_options, q27_answer, q27_explanation),
+        (q28, q28_options, q28_answer, q28_explanation),
+        (q29, q29_options, q29_answer, q29_explanation),
+        (q30, q30_options, q30_answer, q30_explanation),
+        (q31, q31_options, q31_answer, q31_explanation),
+        (q32, q32_options, q32_answer, q32_explanation),
+        (q33, q33_options, q33_answer, q33_explanation),
+        (q34, q34_options, q34_answer, q34_explanation),
+        (q35, q35_options, q35_answer, q35_explanation),
+        (q36, q36_options, q36_answer, q36_explanation),
+        (q37, q37_options, q37_answer, q37_explanation),
+        (q38, q38_options, q38_answer, q38_explanation),
+        (q39, q39_options, q39_answer, q39_explanation),
+        (q40, q40_options, q40_answer, q40_explanation),
+        (q41, q41_options, q41_answer, q41_explanation),
+        (q42, q42_options, q42_answer, q42_explanation),
+        (q43, q43_options, q43_answer, q43_explanation),
+        (q44, q44_options, q44_answer, q44_explanation),
+        (q45, q45_options, q45_answer, q45_explanation),
+        (q46, q46_options, q46_answer, q46_explanation),
+        (q47, q47_options, q47_answer, q47_explanation),
+        (q48, q48_options, q48_answer, q48_explanation),
+        (q49, q49_options, q49_answer, q49_explanation),
+        (q50, q50_options, q50_answer, q50_explanation),
+        (q51, q51_options, q51_answer, q51_explanation),
+        (q52, q52_options, q52_answer, q52_explanation),
+        (q53, q53_options, q53_answer, q53_explanation),
+        (q54, q54_options, q54_answer, q54_explanation),
+        (q55, q55_options, q55_answer, q55_explanation),
+        (q56, q56_options, q56_answer, q56_explanation),
+        (q57, q57_options, q57_answer, q57_explanation),
+        (q58, q58_options, q58_answer, q58_explanation),
+        (q59, q59_options, q59_answer, q59_explanation),
+        (q60, q60_options, q60_answer, q60_explanation),
+        (q61, q61_options, q61_answer, q61_explanation),
+        (q62, q62_options, q62_answer, q62_explanation),
+        (q63, q63_options, q63_answer, q63_explanation),
+        (q64, q64_options, q64_answer, q64_explanation),
+        (q65, q65_options, q65_answer, q65_explanation),
+        (q66, q66_options, q66_answer, q66_explanation),
+        (q67, q67_options, q67_answer, q67_explanation),
+        (q68, q68_options, q68_answer, q68_explanation),
+        (q69, q69_options, q69_answer, q69_explanation),
+        (q70, q70_options, q70_answer, q70_explanation),
+        (q71, q71_options, q71_answer, q71_explanation),
+        (q72, q72_options, q72_answer, q72_explanation),
+        (q73, q73_options, q73_answer, q73_explanation),
+        (q74, q74_options, q74_answer, q74_explanation),
+        (q75, q75_options, q75_answer, q75_explanation),
+        (q76, q76_options, q76_answer, q76_explanation),
+        (q77, q77_options, q77_answer, q77_explanation),
+        (q78, q78_options, q78_answer, q78_explanation),
+        (q79, q79_options, q79_answer, q79_explanation),
+        (q80, q80_options, q80_answer, q80_explanation),
+        (q81, q81_options, q81_answer, q81_explanation),
+        (q82, q82_options, q82_answer, q82_explanation),
+        (q83, q83_options, q83_answer, q83_explanation),
+        (q84, q84_options, q84_answer, q84_explanation),
+        (q85, q85_options, q85_answer, q85_explanation),
+        (q86, q86_options, q86_answer, q86_explanation),
+        (q87, q87_options, q87_answer, q87_explanation),
+        (q88, q88_options, q88_answer, q88_explanation),
+        (q89, q89_options, q89_answer, q89_explanation),
+        (q90, q90_options, q90_answer, q90_explanation),
+        (q91, q91_options, q91_answer, q91_explanation),
+        (q92, q92_options, q92_answer, q92_explanation),
+        (q93, q93_options, q93_answer, q93_explanation),
+        (q94, q94_options, q94_answer, q94_explanation),
+        (q95, q95_options, q95_answer, q95_explanation),
+        (q96, q96_options, q96_answer, q96_explanation),
+        (q97, q97_options, q97_answer, q97_explanation),
+        (q98, q98_options, q98_answer, q98_explanation),
+        (q99, q99_options, q99_answer, q99_explanation),
+        (q100, q100_options, q100_answer, q100_explanation),
+    ]
+
+    random.shuffle(all_questions)
+
+    for question, options, answer, explanation in all_questions:
+        correct_text = None
+        for opt in options:
+            if opt.startswith(answer + ")"):
+                correct_text = opt[3:]
+                break
+
+        answer_texts = [opt[3:] for opt in options]
+        random.shuffle(answer_texts)
+
+        letters = ["A", "B", "C", "D"]
+        new_options = [f"{letters[i]}) {answer_texts[i]}" for i in range(4)]
+
+        new_answer = None
+        for i, text in enumerate(answer_texts):
+            if text == correct_text:
+                new_answer = letters[i]
+                break
+
+        user_ans, correct, explain = ask_question(question, new_options, new_answer, explanation)
+        check_answer(user_ans, correct, explain)
+
+run_quiz()
