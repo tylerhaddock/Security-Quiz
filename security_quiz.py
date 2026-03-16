@@ -232,6 +232,285 @@ q15_explanation = "Phishing uses fraudulent emails to steal credentials. Vishing
 
 user_ans, correct, explain = ask_question(q15, q15_options, q15_answer, q15_explanation)
 check_answer(user_ans, correct, explain)
+# Question 16
+q16 = "Q16: Which of the following is the BEST example of something you ARE in MFA?"
+q16_options = [
+    "A) Password",
+    "B) Smart card",
+    "C) Fingerprint",
+    "D) PIN"
+]
+q16_answer = "C"
+q16_explanation = "Biometrics like fingerprints are 'something you are.' Passwords and PINs are 'something you know.' Smart cards are 'something you have.'"
+
+user_ans, correct, explain = ask_question(q16, q16_options, q16_answer, q16_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 17
+q17 = "Q17: Which of the following BEST describes a zero-day vulnerability?"
+q17_options = [
+    "A) A vulnerability that has been patched",
+    "B) A vulnerability unknown to the vendor with no available fix",
+    "C) A vulnerability discovered during a pen test",
+    "D) A vulnerability that only affects older systems"
+]
+q17_answer = "B"
+q17_explanation = "A zero-day is a vulnerability unknown to the vendor, meaning no patch exists yet, making it extremely dangerous."
+
+user_ans, correct, explain = ask_question(q17, q17_options, q17_answer, q17_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 18
+q18 = "Q18: What type of attack floods a target system with traffic to make it unavailable to users?"
+q18_options = [
+    "A) Phishing",
+    "B) Brute force",
+    "C) Denial of Service (DoS)",
+    "D) Replay attack"
+]
+q18_answer = "C"
+q18_explanation = "A DoS attack overwhelms a system with traffic, making it unavailable. A DDoS uses multiple sources to do the same thing."
+
+user_ans, correct, explain = ask_question(q18, q18_options, q18_answer, q18_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 19
+q19 = "Q19: Which of the following uses asymmetric encryption?"
+q19_options = [
+    "A) AES",
+    "B) RSA",
+    "C) DES",
+    "D) 3DES"
+]
+q19_answer = "B"
+q19_explanation = "RSA is asymmetric and uses a public/private key pair. AES, DES, and 3DES are all symmetric encryption algorithms."
+
+user_ans, correct, explain = ask_question(q19, q19_options, q19_answer, q19_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 20
+q20 = "Q20: What is the purpose of a VPN?"
+q20_options = [
+    "A) To block malicious websites",
+    "B) To create an encrypted tunnel for secure communication over an untrusted network",
+    "C) To scan for open ports on a network",
+    "D) To assign IP addresses to devices"
+]
+q20_answer = "B"
+q20_explanation = "A VPN creates an encrypted tunnel over an untrusted network like the internet, protecting data in transit."
+
+user_ans, correct, explain = ask_question(q20, q20_options, q20_answer, q20_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 21
+q21 = "Q21: Which of the following BEST describes social engineering?"
+q21_options = [
+    "A) Exploiting software vulnerabilities",
+    "B) Manipulating people into revealing confidential information",
+    "C) Scanning a network for open ports",
+    "D) Injecting malicious code into a database"
+]
+q21_answer = "B"
+q21_explanation = "Social engineering manipulates humans rather than systems. Phishing, vishing, and pretexting are all social engineering attacks."
+
+user_ans, correct, explain = ask_question(q21, q21_options, q21_answer, q21_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 22
+q22 = "Q22: An attacker captures a valid authentication token and reuses it later. What type of attack is this?"
+q22_options = [
+    "A) Pass the hash",
+    "B) Replay attack",
+    "C) Brute force",
+    "D) MitM"
+]
+q22_answer = "B"
+q22_explanation = "A replay attack captures valid credentials or tokens and reuses them later to gain unauthorized access."
+
+user_ans, correct, explain = ask_question(q22, q22_options, q22_answer, q22_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 23
+q23 = "Q23: Which of the following BEST describes the CIA triad?"
+q23_options = [
+    "A) Confidentiality, Integrity, Availability",
+    "B) Confidentiality, Identity, Authentication",
+    "C) Control, Integrity, Authorization",
+    "D) Confidentiality, Intrusion, Availability"
+]
+q23_answer = "A"
+q23_explanation = "The CIA triad stands for Confidentiality, Integrity, and Availability — the three core principles of information security."
+
+user_ans, correct, explain = ask_question(q23, q23_options, q23_answer, q23_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 24
+q24 = "Q24: Which tool is commonly used to capture and analyze network packets?"
+q24_options = [
+    "A) Nmap",
+    "B) Metasploit",
+    "C) Wireshark",
+    "D) Nessus"
+]
+q24_answer = "C"
+q24_explanation = "Wireshark is a packet analyzer used to capture and inspect network traffic. Nmap scans ports, Nessus scans vulnerabilities."
+
+user_ans, correct, explain = ask_question(q24, q24_options, q24_answer, q24_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 25
+q25 = "Q25: What does IDS stand for and what does it do?"
+q25_options = [
+    "A) Internet Defense System — blocks all incoming traffic",
+    "B) Intrusion Detection System — monitors and alerts on suspicious activity",
+    "C) Internal Data Scanner — scans files for malware",
+    "D) Intrusion Denial System — prevents unauthorized logins"
+]
+q25_answer = "B"
+q25_explanation = "An IDS monitors network traffic and alerts administrators to suspicious activity. Unlike an IPS, it detects but does not block."
+
+user_ans, correct, explain = ask_question(q25, q25_options, q25_answer, q25_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 26
+q26 = "Q26: Which of the following is a example of a strong password policy?"
+q26_options = [
+    "A) Minimum 6 characters, letters only",
+    "B) Minimum 12 characters with uppercase, lowercase, numbers, and symbols",
+    "C) Use the same password across all systems for consistency",
+    "D) Change passwords every 5 years"
+]
+q26_answer = "B"
+q26_explanation = "Strong passwords use length and complexity — uppercase, lowercase, numbers, and symbols — making them harder to brute force."
+
+user_ans, correct, explain = ask_question(q26, q26_options, q26_answer, q26_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 27
+q27 = "Q27: What is the purpose of network segmentation?"
+q27_options = [
+    "A) To increase internet speeds",
+    "B) To limit the spread of attacks by dividing the network into isolated zones",
+    "C) To assign static IP addresses to all devices",
+    "D) To block all external traffic"
+]
+q27_answer = "B"
+q27_explanation = "Network segmentation divides a network into zones so that if one segment is compromised, attackers cannot freely move laterally."
+
+user_ans, correct, explain = ask_question(q27, q27_options, q27_answer, q27_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 28
+q28 = "Q28: Which of the following BEST describes a rootkit?"
+q28_options = [
+    "A) Malware that replicates itself across networks",
+    "B) Malware that encrypts files and demands ransom",
+    "C) Malware that hides its presence and gives attackers privileged access",
+    "D) Malware that displays unwanted advertisements"
+]
+q28_answer = "C"
+q28_explanation = "A rootkit conceals itself on a system and provides attackers with persistent, privileged access while avoiding detection."
+
+user_ans, correct, explain = ask_question(q28, q28_options, q28_answer, q28_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 29
+q29 = "Q29: What is the difference between authentication and authorization?"
+q29_options = [
+    "A) Authentication grants access, authorization verifies identity",
+    "B) Authentication verifies identity, authorization determines what access is granted",
+    "C) They are the same thing",
+    "D) Authorization happens before authentication"
+]
+q29_answer = "B"
+q29_explanation = "Authentication = proving who you are. Authorization = determining what you are allowed to do after being authenticated."
+
+user_ans, correct, explain = ask_question(q29, q29_options, q29_answer, q29_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 30
+q30 = "Q30: Which of the following is an example of a physical security control?"
+q30_options = [
+    "A) Firewall",
+    "B) Antivirus software",
+    "C) Mantrap",
+    "D) Encryption"
+]
+q30_answer = "C"
+q30_explanation = "A mantrap is a physical security control using two doors to prevent tailgating. Firewalls and antivirus are technical controls."
+
+user_ans, correct, explain = ask_question(q30, q30_options, q30_answer, q30_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 31
+q31 = "Q31: Which port does HTTPS use by default?"
+q31_options = [
+    "A) 80",
+    "B) 443",
+    "C) 22",
+    "D) 8080"
+]
+q31_answer = "B"
+q31_explanation = "HTTPS uses port 443. HTTP uses port 80. SSH uses port 22. Know your common ports — they show up frequently on the exam."
+
+user_ans, correct, explain = ask_question(q31, q31_options, q31_answer, q31_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 32
+q32 = "Q32: What type of malware spreads across a network without user interaction?"
+q32_options = [
+    "A) Trojan",
+    "B) Spyware",
+    "C) Worm",
+    "D) Adware"
+]
+q32_answer = "C"
+q32_explanation = "Worms self-replicate and spread across networks without user interaction. Trojans require a user to execute them."
+
+user_ans, correct, explain = ask_question(q32, q32_options, q32_answer, q32_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 33
+q33 = "Q33: Which of the following BEST describes Defense in Depth?"
+q33_options = [
+    "A) Using one very strong security control",
+    "B) Relying solely on a firewall to protect a network",
+    "C) Layering multiple security controls so if one fails others remain",
+    "D) Encrypting all data at rest"
+]
+q33_answer = "C"
+q33_explanation = "Defense in Depth uses multiple layers of security controls so that no single point of failure can compromise the entire system."
+
+user_ans, correct, explain = ask_question(q33, q33_options, q33_answer, q33_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 34
+q34 = "Q34: What is the purpose of a DMZ in network architecture?"
+q34_options = [
+    "A) To store encrypted backups",
+    "B) To host public-facing services while keeping the internal network protected",
+    "C) To block all incoming traffic from the internet",
+    "D) To assign IP addresses to internal devices"
+]
+q34_answer = "B"
+q34_explanation = "A DMZ is a buffer zone between the internet and the internal network, hosting public services like web servers while protecting internal systems."
+
+user_ans, correct, explain = ask_question(q34, q34_options, q34_answer, q34_explanation)
+check_answer(user_ans, correct, explain)
+
+# Question 35
+q35 = "Q35: Which of the following BEST describes the role of a Certificate Authority (CA)?"
+q35_options = [
+    "A) Assigns IP addresses to devices on a network",
+    "B) Issues and manages digital certificates to verify identities",
+    "C) Monitors network traffic for intrusions",
+    "D) Encrypts data stored on hard drives"
+]
+q35_answer = "B"
+q35_explanation = "A CA is a trusted entity that issues digital certificates used to verify the identity of websites and users in a PKI system."
+
+user_ans, correct, explain = ask_question(q35, q35_options, q35_answer, q35_explanation)
+check_answer(user_ans, correct, explain)
 
 print("\n================================")
 print("n\        QUIZ COMPLETE!      ")
