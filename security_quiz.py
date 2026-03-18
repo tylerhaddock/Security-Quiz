@@ -41,8 +41,6 @@ q1_options = [
 q1_answer = "B"
 q1_explanation = "The CIA Triad is the foundation of cybersecurity. Confidentiality means keeping data private, Integrity means data has NOT been  tampered with, Availability means systems are accessible when needed"
 
-user_ans, correct, explain = ask_question(q1, q1_options, q1_answer, q1_explanation)
-check_answer(user_ans, correct, explain)
 # Question 2
 q2 = "Q2: Which type of attack tricks users into revealing sensitive information?"
 q2_options = [
@@ -54,8 +52,6 @@ q2_options = [
 q2_answer = "C"
 q2_explanation = "Phishing is a social engineering attack where attackers impersonate trusted entities to steal credentials or personal information. It is one of the most common attack vectors."
 
-user_ans, correct, explain = ask_question(q2, q2_options, q2_answer, q2_explanation)
-check_answer(user_ans, correct, explain)
 # Question 3
 q3 = "Q3: What is the purpose of a firewall?"
 q3_options = [
@@ -67,8 +63,6 @@ q3_options = [
 q3_answer = "B"
 q3_explanation = "A fire wall monitors and controls netowrk traffic based on predetermined security rules. It creates a barrier between trusted internal networks and untrustred external networks."
 
-user_ans, correct, explain = ask_question(q3, q3_options, q3_answer, q3_explanation)
-check_answer(user_ans, correct, explain)
 # Question 4
 q4 = "Q4: What does MFA stand for?"
 q4_options = [
@@ -80,8 +74,6 @@ q4_options = [
 q4_answer = "C"
 q4_explanation = "Multi Factor Authentication requires users to provide two or more verification factors to gain access. This makes accounts significantly harder to compromise even if passwords are stolen."
 
-user_ans, correct, explain = ask_question(q4, q4_options, q4_answer, q4_explanation)
-check_answer(user_ans, correct, explain)
 # Question 5
 q5 = "Q5: Which of the following is an example of something you HAVE in MFA?"
 q5_options = [
@@ -93,8 +85,6 @@ q5_options = [
 q5_answer = "C"
 q5_explanation = "MFA factors are catagorized as something you KNOW (password), something you HAVE (phone/token), or something you are (biometrics). A phone with an authenticator app is something you physically have."
 
-user_ans, correct, explain = ask_question(q5, q5_options, q5_answer, q5_explanation)
-check_answer(user_ans, correct, explain)
 # Question 6
 q6 = "Q6: Which of the following BEST describes the principle of least privilege?"
 q6_options = [
@@ -106,8 +96,6 @@ q6_options = [
 q6_answer = "B"
 q6_explanation = "Least privilege limits access to only what is necessary, reducing the overall attack surface of a system."
 
-user_ans, correct, explain = ask_question(q6, q6_options, q6_answer, q6_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 7
 q7 = "Q7: Which protocol provides secure, encrypted remote access to a command-line interface?"
@@ -120,8 +108,6 @@ q7_options = [
 q7_answer = "C"
 q7_explanation = "SSH (port 22) encrypts remote sessions. Telnet sends data in plaintext and is insecure."
 
-user_ans, correct, explain = ask_question(q7, q7_options, q7_answer, q7_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 8
 q8 = "Q8: Which type of malware encrypts a victim's files and demands payment for the decryption key?"
@@ -134,8 +120,6 @@ q8_options = [
 q8_answer = "C"
 q8_explanation = "Ransomware encrypts files and extorts victims. Trojans disguise themselves as legitimate software but do not encrypt files."
 
-user_ans, correct, explain = ask_question(q8, q8_options, q8_answer, q8_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 9
 q9 = "Q9: A company wants to ensure captured network traffic cannot be read. Which concept addresses this?"
@@ -148,8 +132,6 @@ q9_options = [
 q9_answer = "C"
 q9_explanation = "Encryption scrambles data so it is unreadable without the correct key, protecting data in transit."
 
-user_ans, correct, explain = ask_question(q9, q9_options, q9_answer, q9_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 10
 q10 = "Q10: An organization stores passwords using a fixed-length output that cannot be reversed. What is this?"
@@ -162,8 +144,6 @@ q10_options = [
 q10_answer = "C"
 q10_explanation = "Hashing is one-way and deterministic. Unlike encryption, it cannot be reversed to retrieve the original value."
 
-user_ans, correct, explain = ask_question(q10, q10_options, q10_answer, q10_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 11
 q11 = "Q11: Which of the following is used to verify a website's identity and enable HTTPS encryption?"
@@ -176,8 +156,6 @@ q11_options = [
 q11_answer = "B"
 q11_explanation = "PKI-based digital certificates are issued by a Certificate Authority (CA) to authenticate websites and enable TLS encryption."
 
-user_ans, correct, explain = ask_question(q11, q11_options, q11_answer, q11_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 12
 q12 = "Q12: Which type of attack positions an attacker between two communicating parties without their knowledge?"
@@ -190,8 +168,6 @@ q12_options = [
 q12_answer = "B"
 q12_explanation = "MitM attacks allow an attacker to intercept or alter communications between two parties secretly."
 
-user_ans, correct, explain = ask_question(q12, q12_options, q12_answer, q12_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 13
 q13 = "Q13: Which of the following BEST describes multi-factor authentication (MFA)?"
@@ -204,8 +180,6 @@ q13_options = [
 q13_answer = "B"
 q13_explanation = "MFA requires factors from different categories: something you know, have, or are. Two PINs are both the same category."
 
-user_ans, correct, explain = ask_question(q13, q13_options, q13_answer, q13_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 14
 q14 = "Q14: A pen tester has zero knowledge of the target before starting. What type of test is this?"
@@ -218,8 +192,6 @@ q14_options = [
 q14_answer = "C"
 q14_explanation = "Black box = zero prior knowledge, simulating an outside attacker. White box = full knowledge. Gray box = partial."
 
-user_ans, correct, explain = ask_question(q14, q14_options, q14_answer, q14_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 15
 q15 = "Q15: A user gets an email from their bank asking them to click a link and enter credentials. What attack is this?"
@@ -232,8 +204,6 @@ q15_options = [
 q15_answer = "C"
 q15_explanation = "Phishing uses fraudulent emails to steal credentials. Vishing = voice calls, Smishing = SMS, Whaling = targets executives."
 
-user_ans, correct, explain = ask_question(q15, q15_options, q15_answer, q15_explanation)
-check_answer(user_ans, correct, explain)
 # Question 16
 q16 = "Q16: Which of the following is the BEST example of something you ARE in MFA?"
 q16_options = [
@@ -245,8 +215,6 @@ q16_options = [
 q16_answer = "C"
 q16_explanation = "Biometrics like fingerprints are 'something you are.' Passwords and PINs are 'something you know.' Smart cards are 'something you have.'"
 
-user_ans, correct, explain = ask_question(q16, q16_options, q16_answer, q16_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 17
 q17 = "Q17: Which of the following BEST describes a zero-day vulnerability?"
@@ -259,8 +227,6 @@ q17_options = [
 q17_answer = "B"
 q17_explanation = "A zero-day is a vulnerability unknown to the vendor, meaning no patch exists yet, making it extremely dangerous."
 
-user_ans, correct, explain = ask_question(q17, q17_options, q17_answer, q17_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 18
 q18 = "Q18: What type of attack floods a target system with traffic to make it unavailable to users?"
@@ -273,8 +239,6 @@ q18_options = [
 q18_answer = "C"
 q18_explanation = "A DoS attack overwhelms a system with traffic, making it unavailable. A DDoS uses multiple sources to do the same thing."
 
-user_ans, correct, explain = ask_question(q18, q18_options, q18_answer, q18_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 19
 q19 = "Q19: Which of the following uses asymmetric encryption?"
@@ -287,8 +251,6 @@ q19_options = [
 q19_answer = "B"
 q19_explanation = "RSA is asymmetric and uses a public/private key pair. AES, DES, and 3DES are all symmetric encryption algorithms."
 
-user_ans, correct, explain = ask_question(q19, q19_options, q19_answer, q19_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 20
 q20 = "Q20: What is the purpose of a VPN?"
@@ -301,8 +263,6 @@ q20_options = [
 q20_answer = "B"
 q20_explanation = "A VPN creates an encrypted tunnel over an untrusted network like the internet, protecting data in transit."
 
-user_ans, correct, explain = ask_question(q20, q20_options, q20_answer, q20_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 21
 q21 = "Q21: Which of the following BEST describes social engineering?"
@@ -315,8 +275,6 @@ q21_options = [
 q21_answer = "B"
 q21_explanation = "Social engineering manipulates humans rather than systems. Phishing, vishing, and pretexting are all social engineering attacks."
 
-user_ans, correct, explain = ask_question(q21, q21_options, q21_answer, q21_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 22
 q22 = "Q22: An attacker captures a valid authentication token and reuses it later. What type of attack is this?"
@@ -329,8 +287,6 @@ q22_options = [
 q22_answer = "B"
 q22_explanation = "A replay attack captures valid credentials or tokens and reuses them later to gain unauthorized access."
 
-user_ans, correct, explain = ask_question(q22, q22_options, q22_answer, q22_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 23
 q23 = "Q23: Which of the following BEST describes the CIA triad?"
@@ -343,8 +299,6 @@ q23_options = [
 q23_answer = "A"
 q23_explanation = "The CIA triad stands for Confidentiality, Integrity, and Availability — the three core principles of information security."
 
-user_ans, correct, explain = ask_question(q23, q23_options, q23_answer, q23_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 24
 q24 = "Q24: Which tool is commonly used to capture and analyze network packets?"
@@ -357,8 +311,6 @@ q24_options = [
 q24_answer = "C"
 q24_explanation = "Wireshark is a packet analyzer used to capture and inspect network traffic. Nmap scans ports, Nessus scans vulnerabilities."
 
-user_ans, correct, explain = ask_question(q24, q24_options, q24_answer, q24_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 25
 q25 = "Q25: What does IDS stand for and what does it do?"
@@ -371,8 +323,6 @@ q25_options = [
 q25_answer = "B"
 q25_explanation = "An IDS monitors network traffic and alerts administrators to suspicious activity. Unlike an IPS, it detects but does not block."
 
-user_ans, correct, explain = ask_question(q25, q25_options, q25_answer, q25_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 26
 q26 = "Q26: Which of the following is a example of a strong password policy?"
@@ -385,8 +335,6 @@ q26_options = [
 q26_answer = "B"
 q26_explanation = "Strong passwords use length and complexity — uppercase, lowercase, numbers, and symbols — making them harder to brute force."
 
-user_ans, correct, explain = ask_question(q26, q26_options, q26_answer, q26_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 27
 q27 = "Q27: What is the purpose of network segmentation?"
@@ -399,8 +347,6 @@ q27_options = [
 q27_answer = "B"
 q27_explanation = "Network segmentation divides a network into zones so that if one segment is compromised, attackers cannot freely move laterally."
 
-user_ans, correct, explain = ask_question(q27, q27_options, q27_answer, q27_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 28
 q28 = "Q28: Which of the following BEST describes a rootkit?"
@@ -413,8 +359,6 @@ q28_options = [
 q28_answer = "C"
 q28_explanation = "A rootkit conceals itself on a system and provides attackers with persistent, privileged access while avoiding detection."
 
-user_ans, correct, explain = ask_question(q28, q28_options, q28_answer, q28_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 29
 q29 = "Q29: What is the difference between authentication and authorization?"
@@ -427,8 +371,6 @@ q29_options = [
 q29_answer = "B"
 q29_explanation = "Authentication = proving who you are. Authorization = determining what you are allowed to do after being authenticated."
 
-user_ans, correct, explain = ask_question(q29, q29_options, q29_answer, q29_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 30
 q30 = "Q30: Which of the following is an example of a physical security control?"
@@ -441,8 +383,6 @@ q30_options = [
 q30_answer = "C"
 q30_explanation = "A mantrap is a physical security control using two doors to prevent tailgating. Firewalls and antivirus are technical controls."
 
-user_ans, correct, explain = ask_question(q30, q30_options, q30_answer, q30_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 31
 q31 = "Q31: Which port does HTTPS use by default?"
@@ -455,8 +395,6 @@ q31_options = [
 q31_answer = "B"
 q31_explanation = "HTTPS uses port 443. HTTP uses port 80. SSH uses port 22. Know your common ports — they show up frequently on the exam."
 
-user_ans, correct, explain = ask_question(q31, q31_options, q31_answer, q31_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 32
 q32 = "Q32: What type of malware spreads across a network without user interaction?"
@@ -469,8 +407,6 @@ q32_options = [
 q32_answer = "C"
 q32_explanation = "Worms self-replicate and spread across networks without user interaction. Trojans require a user to execute them."
 
-user_ans, correct, explain = ask_question(q32, q32_options, q32_answer, q32_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 33
 q33 = "Q33: Which of the following BEST describes Defense in Depth?"
@@ -483,8 +419,6 @@ q33_options = [
 q33_answer = "C"
 q33_explanation = "Defense in Depth uses multiple layers of security controls so that no single point of failure can compromise the entire system."
 
-user_ans, correct, explain = ask_question(q33, q33_options, q33_answer, q33_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 34
 q34 = "Q34: What is the purpose of a DMZ in network architecture?"
@@ -497,8 +431,6 @@ q34_options = [
 q34_answer = "B"
 q34_explanation = "A DMZ is a buffer zone between the internet and the internal network, hosting public services like web servers while protecting internal systems."
 
-user_ans, correct, explain = ask_question(q34, q34_options, q34_answer, q34_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 35
 q35 = "Q35: Which of the following BEST describes the role of a Certificate Authority (CA)?"
@@ -511,8 +443,6 @@ q35_options = [
 q35_answer = "B"
 q35_explanation = "A CA is a trusted entity that issues digital certificates used to verify the identity of websites and users in a PKI system."
 
-user_ans, correct, explain = ask_question(q35, q35_options, q35_answer, q35_explanation)
-check_answer(user_ans, correct, explain)
 # Question 36
 q36 = "Q36: Which of the following is used to detect and prevent intrusions in real time?"
 q36_options = [
@@ -524,8 +454,6 @@ q36_options = [
 q36_answer = "B"
 q36_explanation = "An IPS (Intrusion Prevention System) actively blocks threats in real time. An IDS only detects and alerts but does not block."
 
-user_ans, correct, explain = ask_question(q36, q36_options, q36_answer, q36_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 37
 q37 = "Q37: What type of attack tries every possible password combination until the correct one is found?"
@@ -538,8 +466,6 @@ q37_options = [
 q37_answer = "C"
 q37_explanation = "Brute force tries every possible combination. Dictionary attacks use a wordlist. Rainbow tables use precomputed hashes."
 
-user_ans, correct, explain = ask_question(q37, q37_options, q37_answer, q37_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 38
 q38 = "Q38: Which of the following BEST describes a business continuity plan (BCP)?"
@@ -552,8 +478,6 @@ q38_options = [
 q38_answer = "B"
 q38_explanation = "A BCP ensures critical operations continue during disruptions. A DRP focuses on restoring systems after a disaster occurs."
 
-user_ans, correct, explain = ask_question(q38, q38_options, q38_answer, q38_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 39
 q39 = "Q39: What does SIEM stand for and what is its primary function?"
@@ -566,8 +490,6 @@ q39_options = [
 q39_answer = "B"
 q39_explanation = "SIEM collects and correlates security logs from across an environment to detect threats and support incident response."
 
-user_ans, correct, explain = ask_question(q39, q39_options, q39_answer, q39_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 40
 q40 = "Q40: Which of the following BEST describes tailgating?"
@@ -580,8 +502,6 @@ q40_options = [
 q40_answer = "A"
 q40_explanation = "Tailgating is a physical security attack where an attacker follows an authorized person through a secured door without credentials."
 
-user_ans, correct, explain = ask_question(q40, q40_options, q40_answer, q40_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 41
 q41 = "Q41: Which encryption algorithm is considered the current standard for symmetric encryption?"
@@ -594,8 +514,6 @@ q41_options = [
 q41_answer = "C"
 q41_explanation = "AES (Advanced Encryption Standard) is the current symmetric encryption standard. DES is outdated. RSA is asymmetric. MD5 is a hash function."
 
-user_ans, correct, explain = ask_question(q41, q41_options, q41_answer, q41_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 42
 q42 = "Q42: What is the purpose of salting a password before hashing it?"
@@ -608,8 +526,6 @@ q42_options = [
 q42_answer = "B"
 q42_explanation = "A salt is a random value added to a password before hashing, ensuring identical passwords produce different hashes and defeating rainbow tables."
 
-user_ans, correct, explain = ask_question(q42, q42_options, q42_answer, q42_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 43
 q43 = "Q43: Which of the following BEST describes a supply chain attack?"
@@ -622,8 +538,6 @@ q43_options = [
 q43_answer = "B"
 q43_explanation = "A supply chain attack compromises a trusted third party like a software vendor to gain access to the ultimate target organization."
 
-user_ans, correct, explain = ask_question(q43, q43_options, q43_answer, q43_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 44
 q44 = "Q44: What port does DNS use by default?"
@@ -636,8 +550,6 @@ q44_options = [
 q44_answer = "B"
 q44_explanation = "DNS uses port 53. Port 25 is SMTP, port 110 is POP3, port 443 is HTTPS. Common ports are heavily tested on Security+."
 
-user_ans, correct, explain = ask_question(q44, q44_options, q44_answer, q44_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 45
 q45 = "Q45: Which of the following BEST describes a honeypo?"
@@ -650,8 +562,6 @@ q45_options = [
 q45_answer = "B"
 q45_explanation = "A honeypot is a decoy system that lures attackers, allowing defenders to monitor their tactics without risking real systems."
 
-user_ans, correct, explain = ask_question(q45, q45_options, q45_answer, q45_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 46
 q46 = "Q46: What is the MAIN difference between a vulnerability scan and a penetration test?"
@@ -664,8 +574,6 @@ q46_options = [
 q46_answer = "B"
 q46_explanation = "Vulnerability scans identify and report weaknesses. Penetration tests go further by actively exploiting those weaknesses to assess real impact."
 
-user_ans, correct, explain = ask_question(q46, q46_options, q46_answer, q46_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 47
 q47 = "Q47: Which of the following BEST describes role-based access control (RBAC)?"
@@ -678,8 +586,6 @@ q47_options = [
 q47_answer = "B"
 q47_explanation = "RBAC assigns permissions based on job roles rather than individual users, making access management easier and more consistent."
 
-user_ans, correct, explain = ask_question(q47, q47_options, q47_answer, q47_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 48
 q48 = "Q48: Which of the following is a common use of steganography?"
@@ -692,8 +598,6 @@ q48_options = [
 q48_answer = "B"
 q48_explanation = "Steganography hides data inside innocent-looking files like images or audio. It is used for covert communication and data exfiltration."
 
-user_ans, correct, explain = ask_question(q48, q48_options, q48_answer, q48_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 49
 q49 = "Q49: What does the term non-repudiation mean in cybersecurity?"
@@ -706,8 +610,6 @@ q49_options = [
 q49_answer = "B"
 q49_explanation = "Non-repudiation ensures that a user cannot deny an action they performed, typically enforced through digital signatures and audit logs."
 
-user_ans, correct, explain = ask_question(q49, q49_options, q49_answer, q49_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 50
 q50 = "Q50: Which of the following BEST describes a watering hole attack?"
@@ -720,8 +622,6 @@ q50_options = [
 q50_answer = "B"
 q50_explanation = "A watering hole attack compromises a website the target group regularly visits, infecting visitors with malware when they land on the page."
 
-user_ans, correct, explain = ask_question(q50, q50_options, q50_answer, q50_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 51
 q51 = "Q51: Which protocol is used to securely transfer files and runs over SSH?"
@@ -734,8 +634,6 @@ q51_options = [
 q51_answer = "C"
 q51_explanation = "SFTP (SSH File Transfer Protocol) runs over SSH and is fully encrypted. FTP is plaintext. FTPS adds TLS to FTP. TFTP is lightweight with no authentication."
 
-user_ans, correct, explain = ask_question(q51, q51_options, q51_answer, q51_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 52
 q52 = "Q52: An attacker sends an email pretending to be the CEO asking an employee to wire money. What attack is this?"
@@ -748,8 +646,6 @@ q52_options = [
 q52_answer = "B"
 q52_explanation = "Whaling is a targeted phishing attack aimed specifically at high-profile individuals like executives. BEC (Business Email Compromise) is a common whaling tactic."
 
-user_ans, correct, explain = ask_question(q52, q52_options, q52_answer, q52_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 53
 q53 = "Q53: Which of the following BEST describes data loss prevention (DLP)?"
@@ -762,8 +658,6 @@ q53_options = [
 q53_answer = "B"
 q53_explanation = "DLP monitors and controls data transfers to prevent sensitive information from leaving the organization without authorization."
 
-user_ans, correct, explain = ask_question(q53, q53_options, q53_answer, q53_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 54
 q54 = "Q54: What is the purpose of an access control list (ACL)?"
@@ -776,8 +670,6 @@ q54_options = [
 q54_answer = "B"
 q54_explanation = "An ACL is a set of rules that defines which users or systems are allowed or denied access to specific network resources or files."
 
-user_ans, correct, explain = ask_question(q54, q54_options, q54_answer, q54_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 55
 q55 = "Q55: Which of the following BEST describes a botnet?"
@@ -790,8 +682,6 @@ q55_options = [
 q55_answer = "B"
 q55_explanation = "A botnet is a network of infected devices (bots) controlled by an attacker (botmaster), often used to launch DDoS attacks or send spam."
 
-user_ans, correct, explain = ask_question(q55, q55_options, q55_answer, q55_explanation)
-check_answer(user_ans, correct, explain)
 # Question 56
 q56 = "Q56: Which of the following BEST describes threat intelligence?"
 q56_options = [
@@ -803,8 +693,6 @@ q56_options = [
 q56_answer = "B"
 q56_explanation = "Threat intelligence is actionable information about threats and threat actors that helps organizations proactively defend their systems."
 
-user_ans, correct, explain = ask_question(q56, q56_options, q56_answer, q56_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 57
 q57 = "Q57: What is the purpose of patch management?"
@@ -817,8 +705,6 @@ q57_options = [
 q57_answer = "B"
 q57_explanation = "Patch management ensures systems receive security updates promptly, closing vulnerabilities before attackers can exploit them."
 
-user_ans, correct, explain = ask_question(q57, q57_options, q57_answer, q57_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 58
 q58 = "Q58: Which of the following BEST describes a logic bomb?"
@@ -831,8 +717,6 @@ q58_options = [
 q58_answer = "B"
 q58_explanation = "A logic bomb is malicious code that remains dormant until a specific trigger occurs, such as a date, time, or user action."
 
-user_ans, correct, explain = ask_question(q58, q58_options, q58_answer, q58_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 59
 q59 = "Q59: Which of the following port and protocol pairs is CORRECT?"
@@ -845,8 +729,6 @@ q59_options = [
 q59_answer = "B"
 q59_explanation = "SMTP uses port 25. SSH is port 22, HTTP is port 80, HTTPS is port 443, and RDP is port 3389. Know these cold for the exam."
 
-user_ans, correct, explain = ask_question(q59, q59_options, q59_answer, q59_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 60
 q60 = "Q60: What is the purpose of full disk encryption (FDE)?"
@@ -859,8 +741,6 @@ q60_options = [
 q60_answer = "B"
 q60_explanation = "Full disk encryption protects all data on a device by encrypting the entire drive, making data unreadable without the correct credentials."
 
-user_ans, correct, explain = ask_question(q60, q60_options, q60_answer, q60_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 61
 q61 = "Q61: Which of the following BEST describes a man-in-the-browser attack?"
@@ -873,8 +753,6 @@ q61_options = [
 q61_answer = "B"
 q61_explanation = "A man-in-the-browser attack uses malware to intercept and manipulate web transactions in real time inside the victim's browser."
 
-user_ans, correct, explain = ask_question(q61, q61_options, q61_answer, q61_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 62
 q62 = "Q62: Which of the following is the BEST way to protect data at rest?"
@@ -887,8 +765,6 @@ q62_options = [
 q62_answer = "C"
 q62_explanation = "Encryption protects data at rest by making it unreadable without the correct key. VPN and TLS protect data in transit, not at rest."
 
-user_ans, correct, explain = ask_question(q62, q62_options, q62_answer, q62_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 63
 q63 = "Q63: What is the purpose of a disaster recovery plan (DRP)?"
@@ -901,8 +777,6 @@ q63_options = [
 q63_answer = "B"
 q63_explanation = "A DRP focuses on restoring IT systems after a disaster. A BCP is broader and covers keeping all business operations running."
 
-user_ans, correct, explain = ask_question(q63, q63_options, q63_answer, q63_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 64
 q64 = "Q64: Which of the following BEST describes a cross-site scripting (XSS) attack?"
@@ -915,8 +789,6 @@ q64_options = [
 q64_answer = "B"
 q64_explanation = "XSS injects malicious scripts into a trusted website, which then execute in the browsers of other users who visit the page."
 
-user_ans, correct, explain = ask_question(q64, q64_options, q64_answer, q64_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 65
 q65 = "Q65: Which of the following BEST describes SQL injection?"
@@ -929,8 +801,6 @@ q65_options = [
 q65_answer = "B"
 q65_explanation = "SQL injection inserts malicious SQL code into an input field to manipulate or extract data from a backend database."
 
-user_ans, correct, explain = ask_question(q65, q65_options, q65_answer, q65_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 66
 q66 = "Q66: What does the term 'threat actor' refer to?"
@@ -943,8 +813,6 @@ q66_options = [
 q66_answer = "B"
 q66_explanation = "A threat actor is any individual or group that intentionally causes harm to systems. Examples include nation-states, hacktivists, and insider threats."
 
-user_ans, correct, explain = ask_question(q66, q66_options, q66_answer, q66_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 67
 q67 = "Q67: Which of the following BEST describes separation of duties?"
@@ -957,8 +825,6 @@ q67_options = [
 q67_answer = "B"
 q67_explanation = "Separation of duties splits critical tasks across multiple people so no single person has enough access to commit fraud or make a critical error alone."
 
-user_ans, correct, explain = ask_question(q67, q67_options, q67_answer, q67_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 68
 q68 = "Q68: Which of the following BEST describes a rainbow table attack?"
@@ -971,8 +837,6 @@ q68_options = [
 q68_answer = "B"
 q68_explanation = "Rainbow table attacks use precomputed hash values to reverse engineer passwords. Salting passwords defeats this attack."
 
-user_ans, correct, explain = ask_question(q68, q68_options, q68_answer, q68_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 69
 q69 = "Q69: Which of the following is an example of a technical security control?"
@@ -985,8 +849,6 @@ q69_options = [
 q69_answer = "C"
 q69_explanation = "Technical controls use technology to protect systems, like firewalls and IPS. Physical controls are locks and cameras. Administrative controls are policies."
 
-user_ans, correct, explain = ask_question(q69, q69_options, q69_answer, q69_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 70
 q70 = "Q70: What is the purpose of a security baseline?"
@@ -999,8 +861,6 @@ q70_options = [
 q70_answer = "B"
 q70_explanation = "A security baseline defines the minimum security configuration required for systems in an organization, ensuring consistent protection."
 
-user_ans, correct, explain = ask_question(q70, q70_options, q70_answer, q70_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 71
 q71 = "Q71: Which of the following BEST describes pretexting?"
@@ -1013,8 +873,6 @@ q71_options = [
 q71_answer = "B"
 q71_explanation = "Pretexting is a social engineering technique where an attacker invents a believable scenario to trick a victim into revealing sensitive information."
 
-user_ans, correct, explain = ask_question(q71, q71_options, q71_answer, q71_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 72
 q72 = "Q72: Which of the following BEST describes a fileless malware attack?"
@@ -1027,8 +885,6 @@ q72_options = [
 q72_answer = "B"
 q72_explanation = "Fileless malware runs in memory and leaves no files on disk, making it much harder for traditional antivirus tools to detect."
 
-user_ans, correct, explain = ask_question(q72, q72_options, q72_answer, q72_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 73
 q73 = "Q73: What does RDP stand for and what port does it use?"
@@ -1041,8 +897,6 @@ q73_options = [
 q73_answer = "B"
 q73_explanation = "RDP (Remote Desktop Protocol) uses port 3389 and allows users to remotely control another computer's desktop. It is a frequent attack target."
 
-user_ans, correct, explain = ask_question(q73, q73_options, q73_answer, q73_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 74
 q74 = "Q74: Which of the following BEST describes the concept of data sovereignty?"
@@ -1055,8 +909,6 @@ q74_options = [
 q74_answer = "B"
 q74_explanation = "Data sovereignty means data is governed by the laws of the country where it physically resides, which is critical for cloud storage compliance."
 
-user_ans, correct, explain = ask_question(q74, q74_options, q74_answer, q74_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 75
 q75 = "Q75: Which of the following BEST describes an insider threat?"
@@ -1069,8 +921,6 @@ q75_options = [
 q75_answer = "B"
 q75_explanation = "Insider threats come from people with legitimate access such as employees or contractors, making them especially dangerous and difficult to detect."
 
-user_ans, correct, explain = ask_question(q75, q75_options, q75_answer, q75_explanation)
-check_answer(user_ans, correct, explain)
 # Question 76
 q76 = "Q76: Which of the following BEST describes a cold site in disaster recovery?"
 q76_options = [
@@ -1082,8 +932,6 @@ q76_options = [
 q76_answer = "C"
 q76_explanation = "A cold site is an empty facility that requires full setup after a disaster. A warm site has some equipment. A hot site is fully operational and ready immediately."
 
-user_ans, correct, explain = ask_question(q76, q76_options, q76_answer, q76_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 77
 q77 = "Q77: Which of the following BEST describes a hot site in disaster recovery?"
@@ -1096,8 +944,6 @@ q77_options = [
 q77_answer = "B"
 q77_explanation = "A hot site mirrors the production environment and can take over immediately. It is the most expensive DR option but has the lowest recovery time."
 
-user_ans, correct, explain = ask_question(q77, q77_options, q77_answer, q77_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 78
 q78 = "Q78: What does the term 'attack surface' refer to?"
@@ -1110,8 +956,6 @@ q78_options = [
 q78_answer = "C"
 q78_explanation = "The attack surface is every possible entry point an attacker could exploit. Reducing attack surface is a core security principle."
 
-user_ans, correct, explain = ask_question(q78, q78_options, q78_answer, q78_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 79
 q79 = "Q79: Which of the following BEST describes a dictionary attack?"
@@ -1124,8 +968,6 @@ q79_options = [
 q79_answer = "B"
 q79_explanation = "A dictionary attack uses a wordlist of common passwords. Brute force tries all combinations. Rainbow tables use precomputed hashes."
 
-user_ans, correct, explain = ask_question(q79, q79_options, q79_answer, q79_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 80
 q80 = "Q80: Which of the following is the BEST defense against phishing attacks?"
@@ -1138,8 +980,6 @@ q80_options = [
 q80_answer = "B"
 q80_explanation = "Since phishing targets humans, security awareness training is the most effective defense. Technical controls help but cannot replace educated users."
 
-user_ans, correct, explain = ask_question(q80, q80_options, q80_answer, q80_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 81
 q81 = "Q81: What is the purpose of a public key in asymmetric encryption?"
@@ -1152,8 +992,6 @@ q81_options = [
 q81_answer = "B"
 q81_explanation = "In asymmetric encryption the public key encrypts data and the private key decrypts it. The public key is freely shared while the private key is kept secret."
 
-user_ans, correct, explain = ask_question(q81, q81_options, q81_answer, q81_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 82
 q82 = "Q82: Which of the following BEST describes a CSRF attack?"
@@ -1166,8 +1004,6 @@ q82_options = [
 q82_answer = "B"
 q82_explanation = "Cross-Site Request Forgery tricks an authenticated user's browser into sending unauthorized requests, exploiting the trust a site has in the user."
 
-user_ans, correct, explain = ask_question(q82, q82_options, q82_answer, q82_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 83
 q83 = "Q83: What is the MAIN purpose of security awareness training?"
@@ -1180,8 +1016,6 @@ q83_options = [
 q83_answer = "B"
 q83_explanation = "Security awareness training reduces human error by educating employees on threats like phishing, social engineering, and safe computing practices."
 
-user_ans, correct, explain = ask_question(q83, q83_options, q83_answer, q83_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 84
 q84 = "Q84: Which of the following BEST describes the concept of zero trust?"
@@ -1194,8 +1028,6 @@ q84_options = [
 q84_answer = "B"
 q84_explanation = "Zero trust assumes no user or device should be trusted by default, even inside the network. Every access request must be verified continuously."
 
-user_ans, correct, explain = ask_question(q84, q84_options, q84_answer, q84_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 85
 q85 = "Q85: Which hashing algorithm is considered the MOST secure from the options below?"
@@ -1208,8 +1040,6 @@ q85_options = [
 q85_answer = "C"
 q85_explanation = "SHA-256 is currently considered secure. MD5 and SHA-1 are outdated and vulnerable to collision attacks. DES is a symmetric encryption algorithm, not a hash."
 
-user_ans, correct, explain = ask_question(q85, q85_options, q85_answer, q85_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 86
 q86 = "Q86: What is the purpose of log management in cybersecurity?"
@@ -1222,8 +1052,6 @@ q86_options = [
 q86_answer = "B"
 q86_explanation = "Log management collects and analyzes logs from systems and devices to detect threats, support investigations, and meet compliance requirements."
 
-user_ans, correct, explain = ask_question(q86, q86_options, q86_answer, q86_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 87
 q87 = "Q87: Which of the following BEST describes a spear phishing attack?"
@@ -1236,8 +1064,6 @@ q87_options = [
 q87_answer = "B"
 q87_explanation = "Spear phishing is targeted at a specific person or organization using personalized information to appear more convincing than generic phishing."
 
-user_ans, correct, explain = ask_question(q87, q87_options, q87_answer, q87_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 88
 q88 = "Q88: Which of the following BEST describes the principle of need to know?"
@@ -1250,8 +1076,6 @@ q88_options = [
 q88_answer = "B"
 q88_explanation = "Need to know restricts access to information based on job necessity. It works alongside least privilege to minimize data exposure."
 
-user_ans, correct, explain = ask_question(q88, q88_options, q88_answer, q88_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 89
 q89 = "Q89: What does TPM stand for and what is its purpose?"
@@ -1264,8 +1088,6 @@ q89_options = [
 q89_answer = "A"
 q89_explanation = "A TPM is a hardware chip that stores cryptographic keys and ensures platform integrity. It is commonly used with full disk encryption like BitLocker."
 
-user_ans, correct, explain = ask_question(q89, q89_options, q89_answer, q89_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 90
 q90 = "Q90: Which of the following BEST describes an advanced persistent threat (APT)?"
@@ -1278,8 +1100,6 @@ q90_options = [
 q90_answer = "B"
 q90_explanation = "An APT is a prolonged stealthy attack, often state-sponsored, where the attacker maintains persistent access to gather intelligence over a long period."
 
-user_ans, correct, explain = ask_question(q90, q90_options, q90_answer, q90_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 91
 q91 = "Q91: Which of the following BEST describes tokenization?"
@@ -1292,8 +1112,6 @@ q91_options = [
 q91_answer = "B"
 q91_explanation = "Tokenization replaces sensitive data like credit card numbers with a token. Unlike encryption, the original data is not mathematically derivable from the token."
 
-user_ans, correct, explain = ask_question(q91, q91_options, q91_answer, q91_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 92
 q92 = "Q92: Which of the following BEST describes a sandbox environment?"
@@ -1306,8 +1124,6 @@ q92_options = [
 q92_answer = "B"
 q92_explanation = "A sandbox is an isolated environment where suspicious code can be executed and analyzed safely without risking production systems."
 
-user_ans, correct, explain = ask_question(q92, q92_options, q92_answer, q92_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 93
 q93 = "Q93: What is the purpose of a vulnerability assessment?"
@@ -1320,8 +1136,6 @@ q93_options = [
 q93_answer = "B"
 q93_explanation = "A vulnerability assessment identifies and prioritizes weaknesses without exploiting them. A penetration test goes further and actively exploits vulnerabilities."
 
-user_ans, correct, explain = ask_question(q93, q93_options, q93_answer, q93_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 94
 q94 = "Q94: Which of the following BEST describes mandatory access control (MAC)?"
@@ -1334,8 +1148,6 @@ q94_options = [
 q94_answer = "C"
 q94_explanation = "MAC uses security labels and clearance levels enforced by the system, not users. It is commonly used in government and military environments."
 
-user_ans, correct, explain = ask_question(q94, q94_options, q94_answer, q94_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 95
 q95 = "Q95: Which of the following is the BEST example of a preventive security control?"
@@ -1348,8 +1160,6 @@ q95_options = [
 q95_answer = "C"
 q95_explanation = "A firewall is a preventive control that stops threats before they occur. Cameras and logs are detective controls. An IR plan is a corrective control."
 
-user_ans, correct, explain = ask_question(q95, q95_options, q95_answer, q95_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 96
 q96 = "Q96: What is the purpose of a chain of custody in digital forensics?"
@@ -1362,8 +1172,6 @@ q96_options = [
 q96_answer = "B"
 q96_explanation = "Chain of custody documents who handled evidence, when, and how, ensuring its integrity is maintained and it remains admissible in legal proceedings."
 
-user_ans, correct, explain = ask_question(q96, q96_options, q96_answer, q96_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 97
 q97 = "Q97: Which of the following BEST describes input validation?"
@@ -1376,8 +1184,6 @@ q97_options = [
 q97_answer = "B"
 q97_explanation = "Input validation checks that data entered by a user meets expected criteria, preventing attacks like SQL injection and XSS from reaching backend systems."
 
-user_ans, correct, explain = ask_question(q97, q97_options, q97_answer, q97_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 98
 q98 = "Q98: Which of the following BEST describes a buffer overflow attack?"
@@ -1390,8 +1196,6 @@ q98_options = [
 q98_answer = "B"
 q98_explanation = "A buffer overflow sends more data than a buffer can hold, potentially overwriting memory and allowing an attacker to execute arbitrary code."
 
-user_ans, correct, explain = ask_question(q98, q98_options, q98_answer, q98_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 99
 q99 = "Q99: Which of the following BEST describes the purpose of an acceptable use policy (AUP)?"
@@ -1404,8 +1208,6 @@ q99_options = [
 q99_answer = "B"
 q99_explanation = "An AUP defines what is and is not acceptable when using company systems, protecting the organization legally and setting clear behavioral expectations."
 
-user_ans, correct, explain = ask_question(q99, q99_options, q99_answer, q99_explanation)
-check_answer(user_ans, correct, explain)
 
 # Question 100
 q100 = "Q100: Which of the following BEST describes the difference between a threat and a vulnerability?"
@@ -1418,8 +1220,6 @@ q100_options = [
 q100_answer = "B"
 q100_explanation = "A vulnerability is a weakness in a system. A threat is anything that could exploit that weakness. Risk is what happens when a threat exploits a vulnerability."
 
-user_ans, correct, explain = ask_question(q100, q100_options, q100_answer, q100_explanation)
-check_answer(user_ans, correct, explain)
 
 print("\n================================")
 print("\n        QUIZ COMPLETE!      ")
